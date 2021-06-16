@@ -1,6 +1,16 @@
+:root {
+       --border-color:#DDDDDD;
+       --ghost-color: #EEEEEE;
+       --accent-link:#AFB1B8;
+       --my-accent:#F5F4FA;
+       --back-color: #2F303A;
+       --text-color: #757575;
+       --accent-text:#212121;
+       --my-color:#ffffff;
+       --accent-color: #2196F3;     }
 body {
        position: relative;
-       background: #ffffff;
+       background:var(--my-color);
        font-style: normal;
        line-height: normal;
        border: none;
@@ -10,12 +20,12 @@ h1,h2,h3,h4{
       font-family: Roboto,sans-serif;
       font-weight: 700; }
  body,h1,h2,h3,h4,ul,li,p{
-        margin: 0px;    } 
+      margin: 0px;    }  
 
     /*Верхняя линия*/
 
 header{
-       background-color: #ffffff; }
+       background-color: var(--my-color); }
 .logo:focus {
        outline: none;
        } 
@@ -29,15 +39,14 @@ header{
        line-height: 30.52px;      }
        
 .link{
-       color: #212121; }
+       color:var(--accent-text); }
 .link:hover{
        outline: none;
-       color: #2196F3; }
+       color: var(--accent-color); }
 .link:focus{
        outline: none;
-       border-color: #ffffff;
-       color: #2196F3;
-      }      
+       border-color: var(--my-color);
+       color: var(--accent-color);     }      
 .menu-nav{
        font-family: Roboto;
        font-style: normal;
@@ -55,151 +64,12 @@ ul{
        margin-block-start: 0em;
        padding: 0px;      }
 
-/*контакты*/
-
-.contacts{
-       display: flex;
-       align-items: center;
-       font-family: Roboto;
-       font-style: normal;
-       line-height: 16px;
-       font-weight: 500;
-       font-size: 14px;
-       letter-spacing: 0.02em;
-       color: #757575;       }
-   
-.contacts:hover,
-.contacts:focus{
-       outline: none;
-       color: #2196F3;
-       fill:#2196F3;    }
-
-    /*шапка*/
-
-.banner  {      
-       background: #2F303A;  }      
-.heading{      
-       font-weight: 900;
-       font-size: 44px;
-       line-height: 60px;
-       color: #ffffff;
-       letter-spacing: 0.06em;    }
-
-  /*особенности*/
-
-.subject{
-       font-size: 14px;
-       line-height: 16.41px;
-       letter-spacing: 0.03em;
-       color: #212121; }
-.lead{
-       font-weight: 400;
-       font-size: 14px;
-       line-height: 24px;
-       letter-spacing: 0.03em;
-       color: #757575; }
-.subtitle{
-       font-weight: 700;
-       font-size: 36px;
-       line-height: 42px;
-       letter-spacing: 0.03em;
-       color: #212121;  }
-
-  /*наша команда*/
-  
-.caption{
-       font-weight: 700;
-       font-size: 36px;
-       line-height: 42px;
-       letter-spacing: 0.03em;
-       color: #212121;
-       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-.userpic:not(:last-child){
-       margin-right: 30px;      }      
-.userpic{      
-       background: #FFFFFF;
-       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-       border-radius: 0px 0px 4px 4px;  }
-.names
-.col{
-       font-weight: 500;
-       font-size: 16px;
-       line-height: 19px;
-       letter-spacing: 0.03em;  }
-.specialty{      
-       font-weight: 400;
-       font-size: 16px;
-       line-height: 19px;
-       letter-spacing: 0.03em;
-       color: #757575; }
-.adress{
-       color: #FFFFFF; }
-.adds{  
-       padding-top: 20px;    
-       color: #FFFFFF;    }
-.aside-mailto,
-.aside-tel{
-       display: flex;
-       height: auto;
-       font-size: 14px;
-       line-height: 24px;
-       letter-spacing: 0.03em;
-       color: rgba(255, 255, 255, 0.6); }
-.aside-mailto{
-       padding-bottom: 9px;
-       padding-top: 9px;         }
-.aside:hover{
-       outline: none;
-       color: #2196F3; }
-.aside:focus{
-       outline: none;
-       color: #2196F3; }
-
-  /*кнопки*/
-
-.filter{
-       cursor: pointer;      } 
-.button {
-       border: 0;     }
-.filter{  
-       font-family: Roboto;
-       font-style: normal;
-       font-weight: 500;
-       font-size: 16px;
-       line-height: 26px;
-       text-align: center;
-       letter-spacing: 0.03em;
-       color: #212121;
-       border-radius: 4px;
-       background: #F5F4FA;   }
-.filter:hover,     
-.filter:focus{
-       outline: none;
-       color: #ffffff;
-       background: #2196F3; }      
-  /*портфолио*/
-
-
-.title{
-       font-weight: 700;
-       font-size: 18px;
-       line-height: 36px;
-       letter-spacing: 0.06em;
-       color: #212121;  }
-.desc{
-       font-weight: 400;
-       font-size: 16px;
-       line-height: 30px;
-       letter-spacing: 0.03em;
-       color: #757575;  }
-
- /********* goit-markup-hw-03 ********/
-/***** главная ****/
-        /* Верхняя линия */
-
 .link.logo
+
 .contacts.widget
-.aside.logo-footer{
+
+.aside.logo-footer
+{
      cursor: pointer;  }
 .container{
        width: 1200px;
@@ -237,7 +107,49 @@ ul{
 .contacts:last-child{
        margin-right: 50px;  }
 
-/* Шапка */
+.contacts{
+       fill:var(--text-color);         }
+.link-mailto ,.link-tel{      
+       margin-right: 10px;     }
+.menu-nav-contacts .contacts:hover,
+.menu-nav-contacts .contacts:focus{
+       outline: none;
+       color: var(--accent-color);           }         
+.email ,.phone{
+       display: flex;     }      
+
+
+/*контакты*/
+
+.contacts{
+       display: flex;
+       align-items: center;
+       font-family: Roboto;
+       font-style: normal;
+       line-height: 16px;
+       font-weight: 500;
+       font-size: 14px;
+       letter-spacing: 0.02em;
+       color: var(--text-color);       }
+   
+.contacts:hover,
+.contacts:focus{
+       outline: none;
+       color: var(--accent-color);
+       fill:var(--accent-color);    }
+
+
+    /*шапка*/
+
+.banner  {      
+       background: var(--back-color);  }      
+.heading{      
+       font-weight: 900;
+       font-size: 44px;
+       line-height: 60px;
+       color:var(--my-color);
+       letter-spacing: 0.06em;    }
+
 
 .helmet{ 
        background: linear-gradient(
@@ -265,25 +177,43 @@ ul{
        text-align: center;
        margin-left: auto;
        margin-right: auto;
-       background: #2196F3;
+       background:var(--accent-color);
        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
        border-radius: 4px; 
-       border: #2196F3; }  
+       border: var(--accent-color); }  
 .btn > .widget> .snap{
        cursor: pointer; 
        width: 140px;
        height: 25px;
        margin-left: auto;
        margin-right: auto;  
-       color: #FFFFFF;  } 
+       color: var(--my-color);  } 
 .snap{
        font-family: Roboto;
        font-weight: bold;
        display: flex;
        align-items: center;
        letter-spacing: 0.06em;    }
+  /*особенности*/
 
-/* Особенности */
+.subject{
+       font-size: 14px;
+       line-height: 16.41px;
+       letter-spacing: 0.03em;
+       color: var(--accent-text); }
+.lead{
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.03em;
+       color: var(--text-color); }
+.subtitle{
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 42px;
+       letter-spacing: 0.03em;
+       color: var(--accent-text);  }
+
 
 .visually-hidden {
        position: absolute;
@@ -313,13 +243,48 @@ ul{
        margin-right: auto;
        padding-top: 30px;
        text-transform: uppercase;
-       color: #212121;   }
+       color:var(--accent-text);   }
 .lead{
        width: 270px;
        height: 75px;
        padding-top: 10px;
-       font-family: Roboto;   }
+       font-family: Roboto;   }  
 
+       .ghost{
+              display: block;
+              border: 1px solid #EEEEEE; }
+       .ticket:nth-child(1n+1){        
+              margin-right: auto;  }
+       .ghost:focus,
+       .ghost:hover{
+              outline: none;
+              background: var(--my-color);
+              border: 1px solid var(--ghost-color);
+              display: block;
+              box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+               0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);       }
+       .vektor-antenna,
+       .vektor-clock,
+       .vektor-diagram,
+       .vektor-astronaut{
+              height: 120px;
+              background: var(--my-accent);
+              background-position: center;
+              background-repeat: no-repeat;
+              border-radius: 4px;      
+              background-size: 70px 70px;      }
+       .vektor-antenna{
+              background-image: url(../svg/antenna\ 1.svg);     }
+       .vektor-clock{  
+              background-image: url(../svg/clock\ 1.svg);    }
+       .vektor-diagram{
+              background-image: url(../svg/diagram\ 1.svg);    }
+       .vektor-astronaut{           
+              background-image: url(../svg/astronaut\ 1.svg);    } 
+
+
+       
 /* чем мы занимаемся */
 
 .subtitle{
@@ -336,19 +301,91 @@ ul{
        display: flex;
        justify-content: space-between;         }
 .thumb{
-       padding-left: 0;  }
+       padding-left: 0;  }  
 
-/* Наша команда */
-
+.label{
+       font-family: Roboto;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 14px;
+       line-height: 16px;
+       text-align: center;
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       color: var(--my-color);     }
+.label{
+       position: absolute;
+       width: 205px;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);   }
+.thumb-desktop{
+       position: absolute;
+       width: 370px;
+       height: 70px;
+       bottom: 4px;
+       background: rgba(47, 48, 58, 0.8);    }
+.wrapper{
+       position: relative;       }           
+       
+  /*наша команда*/
+  
+.caption{
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 42px;
+       letter-spacing: 0.03em;
+       color: var(--accent-text);
+       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+.userpic:not(:last-child){
+       margin-right: 30px;      }      
+.userpic{      
+       background:var(--my-color);
+       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+       border-radius: 0px 0px 4px 4px;  }
+.names
+.col{
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 19px;
+       letter-spacing: 0.03em;  }
+.specialty{      
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+       letter-spacing: 0.03em;
+       color: var(--text-color); }
+.adress{
+       color: var(--my-color); }
+.adds{  
+       padding-top: 20px;    
+       color: var(--my-color);    }
+.aside-mailto,
+.aside-tel{
+       display: flex;
+       height: auto;
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.03em;
+       color: rgba(255, 255, 255, 0.6); }
+.aside-mailto{
+       padding-bottom: 9px;
+       padding-top: 9px;         }
+.aside:hover{
+       outline: none;
+       color: var(--accent-color); }
+.aside:focus{
+       outline: none;
+       color: var(--accent-color); }
 .commercial{     
-       background: #F5F4FA;
+       background:var(--my-accent);
        padding-bottom: 94px;
        padding-top: 94px;         }
 .commercial:not(:box-sizing){
        display: flex;
        align-items: center;     
        height: 648px;   
-       background: #F5F4FA;    } 
+       background: var(--my-accent);    } 
 .caption{
        display: flex;
        align-items: center;
@@ -370,7 +407,7 @@ ul{
        margin-left: auto;
        margin-right: auto;
        padding-bottom: 30px;
-       background: #FFFFFF;
+       background:var(--my-color);
        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
        border-radius: 0px 0px 4px 4px; }
 .names{
@@ -379,7 +416,7 @@ ul{
        margin-left: auto;
        margin-right: auto;
        text-align: center;
-       color: #212121;   }
+       color: var(--accent-text);   }
 .pic{
        padding-bottom: 30px;     }  
 .specialty{
@@ -390,123 +427,14 @@ ul{
        padding-top: 10px;
        padding-bottom: 16px;
        text-align: center;
-       color: #757575;  }
+       color:var(--text-color);  }
 .col{
        width: 208px;
        height: 19px;
        margin-left: auto;
        margin-right: auto;    
        text-align: center;
-       color: #212121;     }
-
-/* подвал */
-.adv{
-       display: flex;
-       align-items: center;
-       height: 252px;
-       background: #2F303A;
-       padding-top: 60px;
-       padding-bottom: 60px;          }
-.adress{
-       width: auto;
-       height: 240px;
-       margin: 0px;
-       font-family: Roboto;
-       font-size: 14px;
-       line-height: 24px;
-       letter-spacing: 0.03em;       }  
-.logo-footer{
-       width: 145px;
-       height: 31px;
-       margin-top: 50px;
-       font-family: Raleway;
-       font-style: normal;
-       font-weight: bold;
-       font-size: 26px;
-       line-height: 31px;
-       letter-spacing: 0.03em;   }
-
-/* ***портфолио*** */
-
-/* кнопка */
-
-.coloring{
-       padding-bottom: 79px;
-       padding-top: 94px;  }
-.group{
-       display: flex; 
-       align-items: center;
-       width: 1170px;
-       height: auto;
-       padding-bottom: 50px; 
-       padding-left: 240px;
-       padding-right: 240px;     } 
-.filter{
-       padding: 6px 22px;
-       width: auto;
-       height: 38px;
-       border: none;  }
-.spreadsheet{ 
-       width: 1200px;
-       height: 1300px;
-       display: flex;
-       flex-wrap: wrap;     }
-.ticket{ 
-       width: auto;
-       height: 404px;        }
-.internal-block{     
-       padding:20px 24px;  } 
-.stud{
-       margin: 0px 8px;        } 
-
-       /* **  goit-markup-hw-04   ** */ 
-       /* <!--Особенности-->  */
-.ghost{
-       display: block;
-       border: 1px solid #EEEEEE; }
-.ticket:nth-child(1n+1){        
-       margin-right: auto;  }
-.ghost:focus,
-.ghost:hover{
-       outline: none;
-       background: #FFFFFF;
-       border: 1px solid #EEEEEE;
-       display: block;
-       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-         1px 4px 6px rgba(0, 0, 0, 0.16);       }
-.vektor-antenna,
-.vektor-clock,
-.vektor-diagram,
-.vektor-astronaut{
-       height: 120px;
-       background: #F5F4FA;
-       background-position: center;
-       background-repeat: no-repeat;
-       border-radius: 4px;      
-       background-size: 70px 70px;      }
-.vektor-antenna{
-       background-image: url(../svg/antenna\ 1.svg);     }
-.vektor-clock{  
-       background-image: url(../svg/clock\ 1.svg);    }
-.vektor-diagram{
-       background-image: url(../svg/diagram\ 1.svg);    }
-.vektor-astronaut{           
-       background-image: url(../svg/astronaut\ 1.svg);    } 
-          /* верхняя линия */
-
-.contacts{
-       fill: #757575;         }
-.link-mailto ,.link-tel{      
-       margin-right: 10px;     }
-.menu-nav-contacts .contacts:hover,
-.menu-nav-contacts .contacts:focus{
-       outline: none;
-       color: var(--accent-color);           }         
-.email ,.phone{
-       display: flex;     }
-
-         /* наша команда */
+       color: var(--accent-text);     }  
 
 .social-are,
 .footer-social-are{
@@ -538,45 +466,46 @@ ul{
        width: 44px;
        height: 44px;
        background: rgba(255, 255, 255, 0.1);   
-       fill: #AFB1B8;     }
+       fill:var(--accent-link);     }
 .instagram:hover,
 .instagram:focus{
        outline: none;
-       fill: #ffffff;
+       fill: var(--my-color);
        background-color: var(--accent-color);   }
 .twitter:hover,
 .twitter:focus{
        outline: none;
-       fill: #ffffff;
+       fill: var(--my-color);
        background-color: var(--accent-color);  }
 .facebook:hover,
 .facebook:focus{
        outline: none;
-       fill: #ffffff;
+       fill: var(--my-color);
        background-color: var(--accent-color);   }
 .linkedin:hover,
 .linkedin:focus{
        outline: none;
-       fill: #ffffff;
+       fill:var(--my-color);
        background-color: var(--accent-color);   }
 .instagram:hover,
 .instagram:focus{
        outline: none;
-       background-color:  #2196F3;   }
+       background-color:  var(--accent-color);   }
 .twitter:hover,
 .twitter:focus{
        outline: none;
-       background-color:  #2196F3;   }
+       background-color:  var(--accent-color);   }
 .facebook:hover,
 .facebook:focus{
        outline: none;
-       background-color:  #2196F3;   }
+       background-color:  var(--accent-color);   }
 .linkedin:hover,
 .linkedin:focus{
        outline: none;
-       background-color:  #2196F3;   }
+       background-color:  var(--accent-color);   }
+       
 
-      /* клиент  */
+     /* клиент  */
 
 .client{
        display: flex;
@@ -588,10 +517,10 @@ ul{
        justify-content: center;
        width: 170px;
        height: 90px;
-       border: 1px solid #AFB1B8;
+       border: 1px solid var(--accent-link);
        box-sizing: border-box;
        border-radius: 4px;
-       fill: #AFB1B8;      }
+       fill:var(--accent-link);      }
 .figure{
        width: 1200px;
        height: auto;
@@ -609,17 +538,42 @@ ul{
        width: 1200px;
        height: auto;      
        padding-bottom: 50px;
-       text-decoration-color: #212121;   }
+       text-decoration-color:var(--accent-text);   }
 .link-client:hover,
 .link-client:focus{ 
        outline: none;
        color: var(--accent-color); 
        border-color: var(--accent-color);
-       fill: var(--accent-color);  }
-:root {
-       --accent-color: #2196F3;     }
-  
-    /* подвал */
+       fill: var(--accent-color);  } 
+
+
+/* подвал */
+.adv{
+       display: flex;
+       align-items: center;
+       height: 252px;
+       background:var(--back-color);
+       padding-top: 60px;
+       padding-bottom: 60px;          }
+.adress{
+       width: auto;
+       height: 240px;
+       margin: 0px;
+       font-family: Roboto;
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.03em;       }  
+.logo-footer{
+       width: 145px;
+       height: 31px;
+       margin-top: 50px;
+       font-family: Raleway;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 26px;
+       line-height: 31px;
+       letter-spacing: 0.03em;   }
+
 .instagram-connexion,
 .twitter-connexion,
 .facebook-connexion,
@@ -634,24 +588,26 @@ ul{
        width: 44px;
        height: 44px;
        background: rgba(255, 255, 255, 0.1);   
-       fill: #ffffff;     }
+       fill: var(--my-color);     }
 .instagram-connexion:hover,
 .instagram-connexion:focus{
        outline: none;
-       background:  #2196F3;   }
+       background:  var(--accent-color);   }
 .twitter-connexion:hover,
 .twitter-connexion:focus{
        outline: none;
-       background:  #2196F3;   }
+       background: var(--accent-color);   }
 .facebook-connexion:hover,
 .facebook-connexion:focus{
        outline: none;
-       background:  #2196F3;   }
+       background:  var(--accent-color);   }
 .linkedin-connexion:hover,
 .linkedin-connexion:focus{
        outline: none;
-       background:  #2196F3;   }
-   /* copy */
+       background:  var(--accent-color);   }
+
+
+   /* подвал JOIN */
 .basement {
        width: 231px;
        height: 81px;
@@ -662,7 +618,7 @@ ul{
        line-height: 16px;
        letter-spacing: 0.03em;
        text-transform: uppercase;
-       color: #FFFFFF;    }
+       color:var(--my-color);    }
 .connexion{      
        align-items: center;
        justify-content: center;
@@ -673,9 +629,77 @@ ul{
        padding-bottom: 20px;      }
 .adv > .container{
        display: flex;
-       align-items: center;       }
+       align-items: center;       }       
 
-       /* goit-markup-hw-05 */
+
+  /*кнопки*/
+
+.filter{
+       cursor: pointer;      } 
+.button {
+       border: 0;     }
+.filter{  
+       font-family: Roboto;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 26px;
+       text-align: center;
+       letter-spacing: 0.03em;
+       color: var(--accent-text);
+       border-radius: 4px;
+       background: var(--my-accent);   }
+.filter:hover,     
+.filter:focus{
+       outline: none;
+       color: var(--my-color);
+       background:var(--accent-color); }  
+       
+.coloring{
+       padding-bottom: 79px;
+       padding-top: 94px;  }
+.group{
+       display: flex; 
+       align-items: center;
+       width: 1170px;
+       height: auto;
+       padding-bottom: 50px; 
+       padding-left: 240px;
+       padding-right: 240px;     } 
+.filter{
+       padding: 6px 22px;
+       width: auto;
+       height: 38px;
+       border: none;  }
+.spreadsheet{ 
+       width: 1200px;
+       height: 1300px;
+       display: flex;
+       flex-wrap: wrap;     }
+.ticket{ 
+       width: auto;
+       height: 404px;        }
+.internal-block{     
+       padding:20px 24px;  } 
+.stud{
+       margin: 0px 8px;        }        
+
+  /*портфолио*/
+
+
+.title{
+       font-weight: 700;
+       font-size: 18px;
+       line-height: 36px;
+       letter-spacing: 0.06em;
+       color:var(--accent-text);  }
+.desc{
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 30px;
+       letter-spacing: 0.03em;
+       color: var(--text-color);  }
+
        /* Активная ссылка */
 
 .stirring{
@@ -694,7 +718,7 @@ ul{
        left: 0px;
        width: 100%;
        height: 4px;
-       background: #2196F3;
+       background: var(--accent-color);
        border-radius: 2px;
        opacity: 0; 
        transition: opacity 250ms linear;  }
@@ -704,74 +728,10 @@ ul{
 .current-link,
 .current-link.link::after,
 .link:focus:after{
-       color: #2196F3;
-       opacity: 1;  } 
-      
-       /* Верхняя линия,Шапка,Особенности */
-
- .backdrop{
-       position: fixed;
-       width: 100%;
-       height: 100%;
-       top: 0px;
-       left: 0px;
-       z-index: 1;
-       background-color: rgba(0, 0, 0, 0.2);     } 
-.window{
-       position: absolute;
-       width: 528px;
-       height: 581px;
-       top: 50%;
-       left: 50%;
-       padding: 40px 41px;
-       transform: translate(-50%, -50%);
-       background-color: #FFFFFF;
-       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-       border-radius: 4px;     }
-.close-black{
-       cursor: pointer;
-       outline: none;
-       position: absolute;
-       width: 30px;
-       height: 30px;
-       right: 8px;
-       top: 8px;
-       background: #FFFFFF;
-       border: 1px solid rgba(0, 0, 0, 0.1);
-       box-sizing: border-box;
-       border-radius: 50px;
-       padding-left: 7px;
-       padding-bottom: 3px;  }
-.backdrop.is-hidden{
-       visibility: hidden;
-       opacity: 0;
-       pointer-events: none;    }
-
-     /* чем мы занимаемся   */
-.label{
-       font-family: Roboto;
-       font-style: normal;
-       font-weight: bold;
-       font-size: 14px;
-       line-height: 16px;
-       text-align: center;
-       letter-spacing: 0.03em;
-       text-transform: uppercase;
-       color: #FFFFFF;     }
-.label{
-       position: absolute;
-       width: 205px;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);   }
-.thumb-desktop{
-       position: absolute;
-       width: 370px;
-       height: 70px;
-       bottom: 4px;
-       background: rgba(47, 48, 58, 0.8);    }
-.wrapper{
-       position: relative;       }      
+       color:var(--accent-color);
+       opacity: 1;  }  
+       
+       
 /* портфолио технокряк */
 .photo{
        position: relative;
@@ -795,7 +755,7 @@ ul{
        font-size: 18px;
        line-height: 28px; 
        letter-spacing: 0.03em;
-       color: #FFFFFF;    }
+       color: var(--my-color);    }
 .filter,.contacts{
        transition-property: background-color,color ;
        transition-duration: 250ms;
@@ -808,8 +768,52 @@ ul{
 .facebook-connexion,.linkedin-connexion,.link-mailto,.link-tel{
        transition-property: background-color,fill, border-color;
        transition-duration: 250ms;
-       transition-timing-function: linear;       }    
+       transition-timing-function: linear;       }        
+
+ 
+       /* Верхняя линия,Шапка,Особенности */
+
+ .backdrop{
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       top: 0px;
+       left: 0px;
+       z-index: 1;
+       background-color: rgba(0, 0, 0, 0.2);     } 
+.window{
+       position: absolute;
+       width: 528px;
+       height: 581px;
+       top: 50%;
+       left: 50%;
+       padding: 40px 41px;
+       transform: translate(-50%, -50%);
+       background-color: var(--my-color);
+       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+       border-radius: 4px;     }
+.close-black{
+       cursor: pointer;
+       outline: none;
+       position: absolute;
+       width: 30px;
+       height: 30px;
+       right: 8px;
+       top: 8px;
+       background:var(--my-color);
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       box-sizing: border-box;
+       border-radius: 50px;
+       padding-left: 7px;
+       padding-bottom: 3px;  }
+.backdrop.is-hidden{
+       visibility: hidden;
+       opacity: 0;
+       pointer-events: none;    }
+
+
  /* модальное окно */
+
  .email-form{
        position: relative;
        width: 570px;
@@ -822,7 +826,7 @@ ul{
        line-height: 16px;
        letter-spacing: 0.03em;
        text-transform: uppercase;
-       color: #FFFFFF;}
+       color:var(--my-color);     }
 .email-input{
        width: 358px;
        height: 50px;
@@ -831,9 +835,9 @@ ul{
        box-sizing: border-box;
        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
        border-radius: 4px;
-       background: #2F303A;   }
+       background:var(--back-color);   }
 .email-input{
-       color:  #ffffff;   }      
+       color:  var(--my-color);   }      
 .subscribe { 
        position: absolute;
        width: 200px;
@@ -842,10 +846,10 @@ ul{
        bottom: 15px;
        cursor: pointer;
        padding: 10px 29px;      
-       background: #2196F3;
+       background:var(--accent-color);
        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
        border-radius: 4px; 
-       border: #2196F3;            } 
+       border: var(--accent-color);            } 
 .subscribe{
        font-family: Roboto;
        font-style: normal;
@@ -856,7 +860,7 @@ ul{
        align-items: center;
        text-align: center;
        letter-spacing: 0.06em;      
-       color: #FFFFFF;   }
+       color: var(--my-color);   }
 .undersign{
        margin-left: 10px;  }
 
@@ -871,7 +875,7 @@ ul{
        line-height: 23px;
        text-align: center;
        letter-spacing: 0.03em;
-       color: #212121;      }
+       color:var(--accent-text);      }
 .name-modal,
 .tel-modal,
 .email-modal,
@@ -883,7 +887,7 @@ ul{
        line-height: 14px;
        letter-spacing: 0.01em;
        cursor: pointer;    
-       color: #757575;
+       color: var(--text-color);
        transition: transform 250ms linear;     }
 .textarea{
        cursor: pointer;
@@ -917,7 +921,7 @@ ul{
        position: absolute;
        left: 12px;
        top: 55%;
-       fill: #212121; 
+       fill: var(--accent-text); 
        transition: transform 250ms linear;     }
 .Vector-tel{
        width: 13px;
@@ -926,7 +930,7 @@ ul{
        position: absolute;
        left: 12px;
        top: 55%;
-       fill: #212121; 
+       fill: var(--accent-text); 
        transition: transform 250ms linear;     }
 .Vector-mail{
        cursor: pointer;
@@ -935,7 +939,7 @@ ul{
        position: absolute;
        left: 12px;
        top: 55%;
-       fill: #212121; 
+       fill: var(--accent-text); 
        transition: transform 250ms linear;  }
 .name-block,
 .tel-block,
@@ -973,7 +977,7 @@ input[type=text],[type=tel],[type=email],textarea{
        -ms-transition: all 0.25s ease;
        -o-transition: all 0.25s ease;
        outline: none;
-       border: 1px solid #DDDDDD;        }           
+       border: 1px solid rgba(255, 255, 255, 0.3)        }           
 input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
        border-color: var(--accent-color);          }
 .textarea:focus-within{
@@ -984,10 +988,10 @@ input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
        width: 200px;
        height: 50px;
        cursor: pointer;
-       background: #2196F3;
+       background:var(--accent-color);
        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
        border-radius: 4px;    
-       border-color: #2196F3;   }
+       border-color:var(--accent-color);   }
 .send-text{
        font-family: Roboto;
        font-style: normal;
@@ -995,7 +999,7 @@ input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
        font-size: 16px;
        line-height: 30px;
        letter-spacing: 0.06em;     
-       color: #fff;      }
+       color: var(--my-color);      }
 .send-modal{
        width: 100%;
        margin-top: 25px;
@@ -1006,7 +1010,7 @@ input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
        font-size: 14px;
        line-height: 24px;
        letter-spacing: 0.03em;
-       color: #2196F3;    
+       color: var(--accent-color);    
        text-decoration: underline;
        text-decoration-skip-ink: none;    }
 .checkbox-text{
@@ -1014,13 +1018,13 @@ input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
        font-size: 14px;
        line-height: 24px;
        letter-spacing: 0.03em;    
-       color: #757575;
+       color: var(--text-color);
        margin-left: 20px;     }
 .close-black:hover>.icon-Vector-close,
 .close-black:focus>.icon-Vector-close{
        fill:var(--accent-color);       }
 .icon-Vector-close{
-       fill: #212121;    }
+       fill: var(--accent-text);    }
 .checkbox-agreement{     
        -webkit-appearance: none;
        -moz-appearance: none;
